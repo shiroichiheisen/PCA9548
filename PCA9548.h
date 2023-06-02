@@ -7,7 +7,7 @@
 class PCA9548
 {
 public:
-	PCA9548(uint8_t PCAaddress);
+	PCA9548(uint8_t PCAaddress, bool beginWire = false);
 	void switchChannel(uint8_t channel);
 
 private:

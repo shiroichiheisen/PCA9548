@@ -1,9 +1,11 @@
 #include "Arduino.h"
 #include "PCA9548.h"
 
-PCA9548::PCA9548(uint8_t PCAaddress)
+PCA9548::PCA9548(uint8_t PCAaddress, bool beginWire)
 {
   PCA9548Address = PCAaddress;
+  if (beginWire)
+    Wire.begin();
 }
 
 void PCA9548::switchChannel(uint8_t channel)
