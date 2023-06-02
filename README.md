@@ -1,11 +1,11 @@
-# PCA9548A Library
+# PCA9548 Library
 
 To use this library:
 
 ```
 uint8_t pcaAdress = 0x70;
 
-PCA9548A pca(pcaAdress);
+PCA9548 pca(pcaAdress);
 
 void loop() {
   pca.selectChannel(0);
