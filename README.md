@@ -1,8 +1,4 @@
-# Utils Various Arduino
-
-Library for the PCA9548A.
-
-## ☕ Using this library
+# PCA9548A Library
 
 To use this library:
 
