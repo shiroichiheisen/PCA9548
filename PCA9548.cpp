@@ -14,3 +14,10 @@ void PCA9548::switchChannel(uint8_t channel)
   Wire.write(1 << channel);
   Wire.endTransmission();
 }
+
+void PCA9548::switchAllChannels(uint8_t channelsData)
+{
+  Wire.beginTransmission(PCA9548Address);
+  Wire.write(channelsData);
+  Wire.endTransmission();
+}

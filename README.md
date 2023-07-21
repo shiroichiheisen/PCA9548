@@ -9,13 +9,15 @@ PCA9548 pca(pcaAdress);
 PCA9548 pca(pcaAdress, 1); // to inicialize the library and start the wire library
 
 void loop() {
-  pca.selectChannel(0);
-  pca.selectChannel(1);
-  pca.selectChannel(2);
-  pca.selectChannel(3);
-  pca.selectChannel(4);
-  pca.selectChannel(5);
-  pca.selectChannel(6);
-  pca.selectChannel(7);
+  pca.switchChannel(0);
+  pca.switchChannel(1);
+  pca.switchChannel(2);
+  pca.switchChannel(3);
+  pca.switchChannel(4);
+  pca.switchChannel(5);
+  pca.switchChannel(6);
+  pca.switchChannel(7);
+  // Or sending a byte for selecting the channels
+  pca.switchAllChannels(0b10010001);
 }
 ```
